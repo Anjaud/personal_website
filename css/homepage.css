@@ -1,0 +1,190 @@
+.home-page{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.homepage-text{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.homepage-text .greeting{
+  font-size: 12vw;
+  font-weight: 700;
+  letter-spacing:-8px;
+  color:#6678A0;
+  padding-bottom: 0.1em;
+}
+
+.homepage-text .name{
+  color: rgb(59, 57, 57);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Sanchez" ;
+  padding-bottom: 0.2em;
+
+}
+
+.homepage-text .motivation{
+  color: rgb(59, 57, 57);
+  font-size: 1.5rem;
+  font-family: "Sanchez";
+  letter-spacing:0.1em;
+
+}
+
+
+.emoji-pic{
+  margin:0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoji-pic img{
+  border-radius: 50%;
+  max-width:80%;
+  height:90%;
+  margin-right:0;
+  flex-grow:1 ;
+}
+
+
+@media (max-width:1025px){
+  .home-page{
+    margin-top:0rem;
+  }
+
+  .homepage-text .name{
+    font-size: 1.9rem;
+    margin-left: 100px;
+
+  }
+
+  .homepage-text .motivation{
+    font-size:1.4rem;
+    margin-left: 100px;
+
+  }
+
+  .emoji-pic img{
+    width:80%;
+    height:80%;
+    margin-top: 60px;
+  }
+
+}
+
+@media (max-width:769px){
+  .homepage-text{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  .homepage-text .greeting{
+    align-items: end;
+    margin-left:100px;
+    font-size: 100px;
+    padding-bottom: 5px;
+  }
+
+  .emoji-pic img{
+    width:85%;
+    height:75%;
+  }
+
+  .homepage-text .name{
+    font-size: 30px;
+  }
+
+  .homepage-text .motivation{
+    font-size: 20px;
+  }
+ 
+}
+
+
+@media (max-width:737px){
+  .homepage-text{
+    height:70%;
+    padding-top:50px;
+  }
+
+  .emoji-pic{
+    padding-top:0px;
+    margin-top:0px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .emoji-pic img{
+    height:80%;
+  }
+
+  .home-page{margin-top: -50px;}
+
+  .homepage-text .greeting{
+    font-size: 90px;
+    padding-bottom: 5px;
+  }
+
+  .homepage-text .name{
+    font-size: 25px;
+  }
+
+  .homepage-text .motivation{
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width:415px){
+  .home-page{
+    display:flex;
+    align-items: space-between;
+    gap:30px;
+    font-size: 70px;
+  }
+
+  .homepage-text .greeting{
+    margin-left:35px;
+    font-size: 70px;
+
+  }
+
+  .emoji-pic img{
+    height:60%;
+    width:80%;
+    margin-right: 15px;
+  }
+
+    .homepage-text .name{
+    font-size:15px;
+    letter-spacing: 2px;
+    margin-left:40px;
+
+  }
+
+  .homepage-text .motivation{
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-left:40px;
+
+  }
+}
+
+@media (max-width:376px){
+  .emoji-pic img{
+    height:50%;
+    width:100%;
+    margin-right: 15px;
+  }
+
+}
